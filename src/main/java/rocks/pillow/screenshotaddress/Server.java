@@ -14,7 +14,7 @@ public class Server {
         Minecraft client = Minecraft.getInstance();
 
         if (client.level == null) return "menus";
-        if (client.isSingleplayer()) return "singleplayer";
+        if (client.isLocalServer()) return "singleplayer"; // not sure what this'll be when lan.. but :shrug:
         return getCurrentRawAddress();
     }
 

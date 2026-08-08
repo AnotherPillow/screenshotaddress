@@ -17,7 +17,6 @@
   "mixins": [
     "screenshotaddress.mixins.json"
   ],
-  "accessWidener": "template.ct",
   "depends": {
     "fabricloader": ">=0.17",
     "minecraft": "${minecraft}"

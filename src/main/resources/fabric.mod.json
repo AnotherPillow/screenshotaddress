@@ -1,28 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "screenshotaddress",
+  "id": "${id}",
   "version": "${version}",
-  "name": "ScreenshotAddress",
+  "name": "${name}",
   "description": "",
-  "authors": [],
+  "authors": ["Pillow"],
   "contact": {},
-  "license": "GPL-3.0",
+  "license": "CC0-1.0",
   "icon": "assets/screenshotaddress/icon.png",
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
-    "client": [
-      "rocks.pillow.screenshotaddress.client.ScreenshotaddressClient"
-    ],
     "main": [
-      "rocks.pillow.screenshotaddress.Screenshotaddress"
+      "rocks.pillow.screenshotaddress.ScreenshotAddress"
     ]
   },
   "mixins": [
     "screenshotaddress.mixins.json"
   ],
+  "accessWidener": "template.ct",
   "depends": {
-    "fabricloader": ">=${loader_version}",
-    "fabric-api": "*",
-    "minecraft": "${minecraft_version}"
+    "fabricloader": ">=0.17",
+    "minecraft": "${minecraft}"
   }
 }
